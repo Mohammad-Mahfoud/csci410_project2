@@ -25,7 +25,7 @@ class _SignupFormState extends State<SignupForm> {
           'Sign Up',
           style: TextStyle(color: Colors.white),
         ),
-        backgroundColor: Colors.teal, // Use the same color as the sign-in page
+        backgroundColor: Colors.teal,
       ),
       body: Center(
         child: Padding(
@@ -36,7 +36,7 @@ class _SignupFormState extends State<SignupForm> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  width: width, // Set the desired width based on a percentage
+                  width: width,
                   child: TextFormField(
                     decoration: InputDecoration(
                       labelText: 'Username',
@@ -55,7 +55,7 @@ class _SignupFormState extends State<SignupForm> {
                 ),
                 SizedBox(height: 16),
                 Container(
-                  width: width, // Set the desired width based on a percentage
+                  width: width,
                   child: TextFormField(
                     decoration: InputDecoration(
                       labelText: 'Password',
@@ -75,7 +75,7 @@ class _SignupFormState extends State<SignupForm> {
                 ),
                 SizedBox(height: 16),
                 Container(
-                  width: width, // Set the desired width based on a percentage
+                  width: width,
                   child: TextFormField(
                     decoration: InputDecoration(
                       labelText: 'Email',
@@ -85,7 +85,6 @@ class _SignupFormState extends State<SignupForm> {
                       if (value == null || value.isEmpty) {
                         return 'Please enter an email';
                       }
-                      // You can add more complex email validation logic here
                       return null;
                     },
                     onSaved: (value) {
@@ -95,7 +94,7 @@ class _SignupFormState extends State<SignupForm> {
                 ),
                 SizedBox(height: 16),
                 Container(
-                  width: width, // Set the desired width based on a percentage
+                  width: width,
                   child: TextFormField(
                     decoration: InputDecoration(
                       labelText: 'Full Name',
